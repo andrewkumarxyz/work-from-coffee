@@ -23,7 +23,7 @@ export const TaskbarClock = () => {
       <div className="flex items-center space-x-1">
         <SoundToggle />
         <a
-          href="https://ko-fi.com/workfromcoffee"
+          href="https://andrewkumar.com/work/Uniform#Book+a+time+with+me"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -31,7 +31,7 @@ export const TaskbarClock = () => {
             variant="ghost"
             size="icon"
             className="size-7"
-            title="Buy me a coffee"
+            title="Book a coffee with me"
           >
             <Coffee size={16} />
           </Button>

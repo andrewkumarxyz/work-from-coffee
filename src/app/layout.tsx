@@ -7,8 +7,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const font = Itim({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://workfromcoffee.com"),
-  title: "Work from Coffee",
+  metadataBase: new URL("https://wfc.kumarx.com"),
+  title: "KUMARx | work from coffee",
   description:
     "A minimal virtual desktop on the web, built for productive & vibey work sessions.",
   openGraph: {

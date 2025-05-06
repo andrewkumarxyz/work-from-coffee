@@ -50,36 +50,48 @@ export interface VolatileMusicPlayerState {
 // Default songs
 const defaultSongs: Song[] = [
   {
-    url: "https://www.youtube.com/watch?v=Fp5ghKduTK8",
-    title: "Ghibli Piano",
-    id: "Fp5ghKduTK8",
+    url: "https://www.youtube.com/watch?v=-LIDTKOxvx8",
+    title: "LoFi Focus Music",
+    id: "LIDTKOxvx8",
     seqId: 1,
-  },
-  {
-    url: "https://www.youtube.com/watch?v=67vdKXlYAZU",
-    title: "Jazzjeans",
-    id: "67vdKXlYAZU",
+},
+{
+    url: "https://www.youtube.com/watch?v=uc_vy0B2Uho",
+    title: "Light work Focus Music",
+    id: "uc_vy0B2Uho",
     seqId: 2,
-  },
-  {
-    url: "https://www.youtube.com/watch?v=lTRiuFIWV54",
-    title: "Lo-fi Study",
-    id: "lTRiuFIWV54",
+},
+{
+    url: "https://www.youtube.com/watch?v=mehGluCxZNs",
+    title: "Grooves Focus Music",
+    id: "mehGluCxZNs",
     seqId: 3,
-  },
+},
 
-  {
-    url: "https://www.youtube.com/watch?v=pfU0QORkRpY",
-    title: "FKJ Live",
-    id: "pfU0QORkRpY",
+{
+    url: "https://www.youtube.com/watch?v=NGNqNHqH9Nw",
+    title: "Hazy Days Focus Music",
+    id: "NGNqNHqH9Nw",
     seqId: 4,
-  },
-  {
-    url: "https://www.youtube.com/watch?v=ot5UsNymqgQ",
-    title: "Cozy Room",
-    id: "ot5UsNymqgQ",
+},
+{
+    url: "https://www.youtube.com/watch?v=5NZ9ZUuSYIE",
+    title: "Jurisprudence Focus Music",
+    id: "5NZ9ZUuSYIE",
     seqId: 5,
-  },
+},
+{
+    url: "https://www.youtube.com/watch?v=IdNxeepSpuk",
+    title: "Coast Contra Never Freestyle",
+    id: "IdNxeepSpuk",
+    seqId: 6,
+},
+{
+    url: "https://www.youtube.com/watch?v=Ceedgl2wKbg",
+    title: "Street Fighter II Complete Soundtrack",
+    id: "Ceedgl2wKbg",
+    seqId: 7,
+},
 ];
 
 // Storage adapter for Jotai
@@ -131,14 +143,14 @@ export const musicPlayerAtom = atom(
     const isMuted = persisted.volume === 0;
 
     // Derive document title
-    let documentTitle = "wfcOS";
+    let documentTitle = "KUMARx | work from coffee";
     if (typeof window !== "undefined") {
       // Check if window exists
       if (!persisted.isWindowOpen) {
         if (volatile.isPlaying) {
-          documentTitle = `▶️ ${currentSong?.title || "Music"} - wfcOS`;
+          documentTitle = `▶️ ${currentSong?.title || "Music"} - KUMARx | work from coffee`;
         } else {
-          documentTitle = `⏸️ Music (Paused) - wfcOS`;
+          documentTitle = `⏸️ Music (Paused) - KUMARx | work from coffee`;
         }
       }
       // Update document.title directly here for simplicity, only when it changes

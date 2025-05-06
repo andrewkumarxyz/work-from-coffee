@@ -107,16 +107,15 @@ export const TaskbarMenu = () => {
           </MenubarItem>
           <MenubarItem
             inset
-            onSelect={() => openUrl("https://github.com/ekmigasari/wfcOS.git")}
+            onSelect={() => openUrl("https://andrewkumar.com/now")}
           >
-            Github<MenubarShortcut>repository</MenubarShortcut>
+            Website <MenubarShortcut>andrewkumar/now</MenubarShortcut>
           </MenubarItem>
-          <MenubarSeparator />
           <MenubarItem
-            inset
-            onSelect={() => openUrl("https://x.com/ekmigasari")}
+              inset
+              onSelect={() => openUrl("https://github.com/andrewkumarxyz")}
           >
-            Xmigas <MenubarShortcut>creator</MenubarShortcut>
+              Github <MenubarShortcut>andrewkumarxyz</MenubarShortcut>
           </MenubarItem>
         </MenubarContent>
       </MenubarMenu>
