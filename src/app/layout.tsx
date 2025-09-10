@@ -2,22 +2,21 @@ import type { Metadata } from "next";
 import { Itim } from "next/font/google";
 import "@/presentation/styles/globals.css";
 import JotaiProvider from "@/providers/JotaiProvider";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 const font = Itim({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://workfromcoffee.com"),
-  title: "Work from Coffee | Award-Winning app for Focus & Productivity",
+  metadataBase: new URL("https://wfc.kumarx.com"),
+  title: "KUMARx | work from coffee",
   description:
     "Virtual desktop designed for deep focus and remote work productivity. All-in-one workspace with integrated to-do lists, timers, notepads, music, and ambience for distraction-free work.",
   openGraph: {
     images: "/metadata/wfc-og.png",
-    title: "Work from Coffee",
+    title: "KUMARx | work from coffee",
     description:
       "Virtual desktop designed for deep focus and remote work productivity. All-in-one workspace with integrated to-do lists, timers, notepads, music, and ambience for distraction-free work.",
-    url: "https://workfromcoffee.com",
-    siteName: "Work from Coffee",
+    url: "https://wfc.kumarx.com",
+    siteName: "KUMARx | work from coffee",
     locale: "en_US",
     type: "website",
   },
